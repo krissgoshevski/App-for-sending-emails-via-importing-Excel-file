@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.email {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h3 {
+    margin-top: 20px; 
+}
+
+
+p {
+    margin: 5px 0; 
+    font-size: 14px; 
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.contact-info p {
+    margin: 3px 0; 
+}
+
+
+.contact-info a {
+    color: blue;
+    text-decoration: none; 
+}
+
+
+.contact-info a:hover {
+    color: darkblue;
+}
