@@ -1,3 +1,32 @@
+SKILLS: PHP, Laravel, MySQL, HTML, CSS, Blade Template, Bootstrap, nginx & apache configuration
+
+NOTE: YOU SHOULD TO IMPLEMENT YOUR EMAIL CONFIGURATION IN YOUR .env file or in config/database file !!!
+
+This application functions as follows:
+
+- php artisan make:mail SendEmail -> class in the app/Mail directory
+- php artisan make:controller ExcelImportExportController -> class in the app/Http/Controllers directory
+- php artisan make:controller ImportExcelFilesController -> class in the app/Http/Controllers directory
+- php artisan make:controller VerifyEmailController -> class in the app/Http/Controllers directory
+- php artisan make:import Import -> class in the app/Imports/Import directory
+- composer require maatwebsite/excel -> for Importing excel files package
+
+
+- Within storage/app/excel directory are saved all excel files imported
+- Within the Controllers app/Http/Controllers directory are implement the Logic of process for sending emails
+- custom logger
+- authentication
+- requests
+- debugbar
+
+  
+First, an Excel file must be imported. This file contains several columns, with each row representing an individual email to be sent. For example, if there are 10 rows, each containing an email address, an email will be sent for each row with the corresponding details.
+
+After importing, a preview of the emails is displayed. If the file is incorrect, it can be deleted. Once reviewed and confirmed, clicking the "Send Emails" button will send the emails and delete the imported table. Additionally, all sent emails are saved in the database.
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
